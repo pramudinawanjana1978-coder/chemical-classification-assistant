@@ -16,9 +16,9 @@
   background-image:
     linear-gradient(
       180deg,
-      rgba(8, 25, 50, 0.62) 0%,
-      rgba(10, 35, 60, 0.45) 45%,
-      rgba(8, 25, 50, 0.72) 100%
+      rgba(255, 255, 255, 0.78) 0%,
+      rgba(255, 255, 255, 0.68) 50%,
+      rgba(255, 255, 255, 0.8) 100%
     ),
     url("../assets/chemistry-background.png");
 
@@ -53,16 +53,12 @@
 }
 
 .admin-shell .btn-primary {
-  background: linear-gradient(
-    135deg,
-    var(--navy, #12345c),
-    #1b4a86
-  );
+  background: var(--navy, #0b1f3a);
   color: #fff;
 }
 
 .admin-shell .btn-primary:hover:not(:disabled) {
-  filter: brightness(1.12);
+  background: #142d50;
 }
 
 .admin-shell .btn-block {
@@ -77,17 +73,18 @@
 }
 
 .admin-shell .btn-ghost:hover:not(:disabled) {
-  background: #e6ecf3;
+  background: #eaf2ff;
 }
 
 .admin-shell .btn-light {
-  background: rgba(255, 255, 255, 0.14);
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.4);
+  background: #fff;
+  color: var(--navy, #0b1f3a);
+  border-color: #fff;
 }
 
 .admin-shell .btn-light:hover {
-  background: rgba(255, 255, 255, 0.24);
+  background: #eaf2ff;
+  border-color: #eaf2ff;
 }
 
 .admin-shell .btn-danger {
@@ -112,7 +109,7 @@
 }
 
 .admin-shell .btn-outline:hover:not(:disabled) {
-  background: var(--sky-100, #eaf3fc);
+  background: var(--sky-100, #eaf2ff);
 }
 
 .admin-shell .btn-danger-outline {
@@ -161,11 +158,7 @@
   display: grid;
   place-items: center;
   color: #fff;
-  background: linear-gradient(
-    135deg,
-    var(--navy, #12345c),
-    var(--teal-600, #149c90)
-  );
+  background: var(--navy, #0b1f3a);
   margin: 0 auto;
 }
 
@@ -207,7 +200,7 @@
   font: inherit;
   padding: 11px 13px;
   border-radius: 10px;
-  border: 1.5px solid #c6d0dc;
+  border: 1px solid var(--border, #d8e2f0);
   background: #fff;
   color: var(--text, #1b2b40);
 }
@@ -215,8 +208,8 @@
 .admin-shell .field input:focus,
 .admin-shell .field select:focus {
   outline: 0;
-  border-color: var(--teal-600, #149c90);
-  box-shadow: 0 0 0 3px rgba(18, 178, 150, 0.18);
+  border-color: var(--navy, #0b1f3a);
+  box-shadow: 0 0 0 3px rgba(11, 31, 58, 0.1);
 }
 
 .admin-shell .field small {
@@ -249,11 +242,7 @@
 /* ---------- Dashboard Header ---------- */
 
 .dash-header {
-  background: linear-gradient(
-    135deg,
-    var(--navy-900, #081932),
-    var(--navy, #12345c)
-  );
+  background: var(--navy-900, #0b1f3a);
   color: #fff;
   padding: 16px 24px;
   display: flex;
@@ -276,7 +265,8 @@
   border-radius: 11px;
   display: grid;
   place-items: center;
-  background: var(--teal-600, #149c90);
+  background: #ffffff;
+  color: var(--navy, #0b1f3a);
   flex-shrink: 0;
 }
 
@@ -310,9 +300,9 @@
 /* ---------- Success Toast ---------- */
 
 .toast {
-  background: #d6f5e4;
-  color: #0b6b3e;
-  border: 1px solid #a8e3c2;
+  background: #eaf2ff;
+  color: var(--navy, #0b1f3a);
+  border: 1px solid #d5e3fb;
   border-left-width: 5px;
   padding: 12px 16px;
   border-radius: 12px;
@@ -346,14 +336,14 @@
   max-width: 460px;
   display: flex;
   align-items: center;
-  background: #f5f8fb;
+  background: #f7faff;
   border: 1.5px solid #c6d0dc;
   border-radius: 10px;
 }
 
 .admin-search:focus-within {
-  border-color: var(--teal-600, #149c90);
-  box-shadow: 0 0 0 3px rgba(18, 178, 150, 0.16);
+  border-color: var(--navy, #0b1f3a);
+  box-shadow: 0 0 0 3px rgba(11, 31, 58, 0.1);
   background: #fff;
 }
 
@@ -384,7 +374,7 @@
 }
 
 .admin-search .clear:hover {
-  background: var(--sky-100, #eaf3fc);
+  background: var(--sky-100, #eaf2ff);
 }
 
 /* ---------- Chemical Table ---------- */
@@ -405,7 +395,7 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--muted, #64748b);
-  background: #f5f8fb;
+  background: #eaf2ff;
   padding: 12px 16px;
   border-bottom: 1px solid var(--border, #d8e1eb);
   white-space: nowrap;
@@ -418,7 +408,7 @@
 }
 
 .admin-table tbody tr:hover {
-  background: #f8fbfd;
+  background: #f7faff;
 }
 
 .cell-name {
@@ -446,7 +436,7 @@
 }
 
 .chip {
-  background: var(--sky-100, #eaf3fc);
+  background: var(--sky-100, #eaf2ff);
   color: #24466f;
   padding: 3px 9px;
   border-radius: 999px;
@@ -461,8 +451,8 @@
 
 .category-pill {
   display: inline-block;
-  background: var(--teal-100, #d9f5ee);
-  color: #0a6e5c;
+  background: var(--sky-100, #eaf2ff);
+  color: var(--navy, #0b1f3a);
   font-weight: 600;
   font-size: 0.82rem;
   padding: 4px 11px;
@@ -589,7 +579,7 @@
 
   .admin-table tr {
     padding: 12px 14px;
-    border-bottom: 8px solid #eef2f6;
+    border-bottom: 8px solid #eaf2ff;
   }
 
   .admin-table td {
